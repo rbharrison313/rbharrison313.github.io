@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ryan B. Harrison</title>
+<style>
+body {
+  background-color: #1D2228;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+     position: fixed;
+     top: 0;
+     width: 100%;
+     height:  50px;
+      background: rgb(125,162,169);
+     background: linear-gradient(90deg, rgba(125,162,169,1) 0%, rgba(29,34,40,1) 90%, rgba(29,34,40,1) 100%); 
+     margin-left: -10px;
+     margin-bottom: 10px;
+}
+
+.header a {
+     float: left;
+     display:  block;
+     color: #f2f2f2;
+     text-align:  center;
+     padding: 14px 16px;
+}
+.container {
+     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    row-gap: 20px;
+    margin-top: 60px;
+    }
+    
+.card {
+	width: min(300px, 350px);
+    height: 350px;
+    background: #A9A9A9;
+    border-radius: 20px;
+    overflow: hidden;
+    }
+
+#Rice {
+     background-image: url("file:///Users/mcryan/Desktop/Ryan-Portfolio-Website/rayrice.jpeg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     }
+
+#UMBClax {
+     background-image: url("file:///Users/mcryan/Desktop/Ryan-Portfolio-Website/suspension1.jpg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     }
+
+#card3 {
+     background-image: url("file:///Users/mcryan/Desktop/Ryan-Portfolio-Website/fullsizeoutput_3393.jpeg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     }
+
+#Brickley {
+     background-image: url("file:///Users/mcryan/Desktop/Ryan-Portfolio-Website/brickley-homescreen.png");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     }
+
+#TenaxAd {
+     background-image: url("file:///Users/mcryan/Desktop/Ryan-Portfolio-Website/Contractor-Supply-Ad-Final.jpg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     }
+
+#AVFDAad {
+     background-image: url("file:///Users/mcryan/Desktop/Ryan-Portfolio-Website/AVFDA-raffle.jpg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     }
+
+#snakebook {
+     background-image: url("file:///Users/mcryan/Desktop/Ryan-Portfolio-Website/PBDS612-snake.jpg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+#CanadaDry {
+     background-image: url("file:///Users/mcryan/Desktop/Ryan-Portfolio-Website/CanadaDry-revamp.jpg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+#PushPinMag {
+     background-image: url("file:///Users/mcryan/Desktop/Ryan-Portfolio-Website/PushPinMag-cover.jpg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+#ProPlane{
+     background-image: url("file:///Users/mcryan/Desktop/Ryan%20School/610/Pro-Plane-Poster.jpg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+#AntiPlane{
+     background-image: url("file:///Users/mcryan/Desktop/Ryan%20School/610/Anti-Plane-Poster.jpg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+#CookCover{
+     background-image: url("file:///Users/mcryan/Desktop/Ryan-Portfolio-Website/PBDS615-cookbookcover.jpg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.card-overlay {
+	position: relative;
+    top: 275px;
+    height: 350px;
+    background: rgba(125, 162, 169, 95%);
+    transition: transform 1s ease-out,
+    			background 1s ease;
+    border-radius: 20px;
+    }
+    
+.card:hover .card-overlay{
+	transform: translateY(-275px);
+    background: rgba(125, 162, 169, 100%);
+	}
+
+.card-overlay h2 {
+     margin: 0px;
+	padding-top: 8px;
+     padding-left: 5px;
+     padding-right: 5px;
+    text-align: center;
+    color: white;
+    }
+    
+.card-overlay h4 {
+	text-align: center;
+     margin-top: 8px;
+     color: white;
+    }
+
+.card-overlay p {
+     margin-left: 2rem;
+     margin-right: 2rem;
+}
+
+</style>
+</head>
+<body>

@@ -1,0 +1,140 @@
+<html>
+	<head> 
+		<title>RBH</title>
+
+		<link rel="stylesheet"
+			type="text/css"
+			href="bootstrap.css"
+		/>
+
+		<link rel="stylesheet"
+			type="text/css"
+			href="styles.css"
+		/>
+
+		<script src="http://code.jquery.com/jquery-2.2.3.js">
+		</script>
+
+	</head>
+
+	<body>
+		<div class="conainter"
+			<a href="portfolio.html">
+				Home
+			</a>
+			&nbsp;
+			<a href="aboutme.html">
+				About Me
+			</a>
+			&nbsp;
+			<a href="resume.html">
+				Resume
+			</a>
+			&nbsp;
+			<a href="contact.html">
+				Contact Me
+			</a>
+		
+
+		<hr></hr>
+
+		<h1 id="number"
+			onclick="count();">
+			</h1>
+
+		
+
+		<div class="container">
+			<h2>Recent Work</h2>
+		</div>
+
+			<div class="row">
+					<div class="col-md-1">
+						<button id="backward">&lt;</button>
+					</div>
+
+					<div class="col-md-10">
+						<img id="bigImage" class="large-img" src="wlax.jpg"
+						alt="UMBC vs. VCU" width="640" height="480"/>
+					</div>
+					
+					<div class="col-md-1">
+						<button id="forward">&gt;</button>
+					</div>
+			</div>
+		
+
+			<div class="row">
+				
+				<div class="col-md-3">
+					<h3>
+						<a href="http://www.umbcretrievers.com/sports/wlax/2015-16/releases/20160220t33zsc">
+						
+						<span class="text-content"><span>Women's Lacrosse Runs Away with 20-5 Win Over VCU</span></span>
+						</a>
+					</h3>
+					<img id="image1"
+					class="crop-img" src="wlax.jpg" alt="UMBC vs. VCU" width="280" height="200" />
+				</div>
+
+				<div class="col-md-3">
+					<h3>
+						<a href="http://retrieverweekly.umbc.edu/five-womens-lacrosse-players-suspended-indefinitely/">
+						<span class="text-content"><span>Five Women's Lacrosse Players Suspended Indefinitely</span></span>
+						</a>
+					</h3>
+					<img id="image2" class="crop-img" src="suspension1.jpg" alt="Giro Suspension" width="280" height="200"/>
+				</div>
+
+				<div  class="col-md-3">
+					<h3>
+						<a href="http://www.citypaper.com/blogs/the-news-hole/bcp-ray-rice-ravens-jersey-buyback-20140920-story.html">
+						<span class="text-content"><span>Hours-long waits over two daysto exchange Ray Rice jerseys at M&T Bank Stadium</span></span>
+						</a>
+					</h3>
+					<img id="image3" class="crop-img" src="rayrice.jpeg" alt="synethesizer workshop" width="280" height="200"/>
+				</div>
+
+				<div class="col-md-3">
+					<h3>
+						<a href="http://retrieverweekly.umbc.edu/both-brown-and-hogan-need-democrats/">
+						<span class="text-content"><span>Both Brown and Hogan Need Democrats</span></span>
+						</a>
+					</h3>
+					<img id="image4" class="crop-img" src="trw.png" alt="Brown and Hogan" width="280" height="200"/>
+				</div>
+			</div>
+		
+			<script>
+				var paused=false; 
+				$(".crop-img").click(function(){
+					$("#bigImage").attr('src',
+						$(this).attr('src'));
+				});
+				var counter=1;
+				$("#image"+counter).click();
+				$("#backward").click(function(){
+					counter=counter-1;
+					if(counter<1){
+						counter=4;
+					}
+					$("#image"+counter).click();
+				});
+				$("#forward").click(funtion(){
+					counter=counter+1;
+					if(counter>4){
+						counter=1;
+					}
+					$("#image"+counter).click();
+				});
+				$("#bigImage").click(function(){
+					paused=!paused;
+				});
+				setInterval(function(){
+					if(!paused){
+						$("#forward").click();
+					};
+				},3000);
+			</script>
+	</body>
+</html>
