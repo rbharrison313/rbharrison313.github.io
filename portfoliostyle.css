@@ -21,7 +21,7 @@ body {
        padding: 14px 16px;
   }
   .container {
-       display: flex;
+      display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-around;
@@ -155,4 +155,11 @@ body {
   .card-overlay p {
        margin-left: 2rem;
        margin-right: 2rem;
+  }
+
+  .blog-post {
+     height: 60vh;
+     width: 100%;
+     overflow:scroll;
+     background:#A9A9A9;
   }
