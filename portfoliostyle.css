@@ -164,6 +164,7 @@ body {
      margin-right: 25vw;
      overflow: auto;
      background:#A9A9A9;
-     border: solid 2px rgba(125, 162, 169, 100%);
-     padding: 8px 12px 8px 12px;
+     border: solid 2px rgba(29,34,40,1);
+     padding: 12px 20px 12px 20px;
+     color:#ffffff;
   }
