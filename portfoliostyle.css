@@ -159,10 +159,10 @@ body {
 
   .blog-post {
      height: 60vh;
-     max-width: 70vw;
-     margin-left: 15vw;
-     margin-right: 15vw;
-     overflow: scroll;
+     max-width: 50vw;
+     margin-left: 25vw;
+     margin-right: 25vw;
+     overflow: auto;
      background:#A9A9A9;
      border: solid 2px rgba(125, 162, 169, 100%);
      padding: 8px 12px 8px 12px;
