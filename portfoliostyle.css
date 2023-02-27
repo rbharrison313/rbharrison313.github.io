@@ -158,8 +158,11 @@ body {
   }
 
   .blog-post {
-     height: 60vh;
-     width: 100%;
-     overflow:scroll;
+     max-height: 60vh;
+     max-width: 70vw;
+     margin-left: 15vw;
+     margin-right: 15vw;
+     overflow: scroll;
      background:#A9A9A9;
+     border: solid 2px rgba(125, 162, 169, 100%);
   }
